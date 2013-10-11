@@ -1,0 +1,56 @@
+<html xmlns="http://www.w3.org/1999/xhtml" style="width:800px;height:600px;"> <!-- -->
+<head>
+<script src="jquery.tools.min.js"></script>
+<script src="ga.js"></script>
+<script src="lib.js"></script>
+<script src="options.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/standalone.css"/>
+<link rel="stylesheet" href="/css/tabs.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/css/tabs-panes.css" type="text/css" media="screen" />
+	  
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" >
+<!-- the tabs -->
+<ul class="tabs">
+	
+	<li><a href="#">Tally</a></li>
+	<li><a href="#">Chart</a></li>
+	<li><a href="#">Latest News</a></li>
+	<li><a href="#">News Archive</a></li>
+	<li><a href="#">Setup</a></li>
+</ul>
+
+<!-- tab "panes" -->
+<div class="panes">
+
+	<div><iframe id="tallyFrame" src="" seamless width="100%" height="510px"></iframe></BR><i>Source: <a href="http://www.borzamalta.com.mt" target="_blank">Borzamalta.com.mt</a></i>&nbsp;&nbsp;<img title="Press to refresh content." src="images/refresh_icon.png" id="refreshTally" src="" width="13px" /></div>
+	<div><iframe id="chartFrame" src="" seamless width="100%" height="510px"></iframe></BR><i>Source: <a href="http://www.borzamalta.com.mt" target="_blank">Borzamalta.com.mt</a></i>&nbsp;&nbsp;<img title="Press to refresh content." src="images/refresh_icon.png" id="refreshChart" src="" width="13px" /></div>
+	<div><iframe id="newsFrame" src="" seamless width="100%" height="510px"></iframe></BR><i>Source: <a href="http://www.borzamalta.com.mt" target="_blank">Borzamalta.com.mt</a></i>&nbsp;&nbsp;<img title="Press to refresh content." src="images/refresh_icon.png" id="refreshNews" src="" width="13px" /></div>
+	<div><iframe id="newsArchiveFrame" src="" seamless width="100%" height="510px"></iframe></BR><i>Source: <a href="http://www.borzamalta.com.mt" target="_blank">Borzamalta.com.mt</a></i>&nbsp;&nbsp;<img title="Press to refresh content." src="images/refresh_icon.png" id="refreshNewsArchive" src="" width="13px" /></div>
+	
+	<div>
+	<form id="options">
+	Select Stock To Follow
+	<select id="stockOption"></select>
+	
+	</BR></BR>
+	
+	Is Polling Active? &nbsp;&nbsp;<img id="pollingStatus" src="" width="16px"> &nbsp;&nbsp;<i>Polling is only active while the Maltese stock market is open.</i>
+	
+	</BR></BR>
+	
+	Enable Desktop Notifications (Price Change) <input type="checkbox" id="enableNotifications">
+	
+	<section id="notificationSection" hidden>
+	</BR>
+	- Stock Price - Low Level Notification &#8364;<input type="text" id="lowLevel" size="2" maxlength="8" >  <i>Enter '0' to disable the particular notification.</i>
+	</BR></BR>
+	- Stock Price - High Level Notification &#8364;<input type="text" id="highLevel" size="2" maxlength="8" > <i>Enter '0' to disable the particular notification.</i>
+	</section>
+	
+		</form>
+	</div>
+</div>
+
+</body>
+</html>
