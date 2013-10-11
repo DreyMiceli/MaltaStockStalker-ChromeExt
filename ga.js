@@ -1,5 +1,5 @@
 var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-40074112-2']);
+_gaq.push(['_setAccount', '<YOUR Google Analytics ID>']);
 _gaq.push(['_trackPageview']);
 
 (function() {
